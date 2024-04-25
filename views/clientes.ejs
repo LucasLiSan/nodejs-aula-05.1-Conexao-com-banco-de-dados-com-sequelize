@@ -52,7 +52,7 @@
                                         <%= cliente.endereco %>
                                     </td>
                                     <td><a style="color: #ffa500;" href="/clientes/edit/<%= cliente.id %>">Editar</a></td>
-                                    <td><a style="color: #ff0000;" href="/clientes/delete/<%= cliente.id %>">Excluir</a></td>
+                                    <td><a style="color: #ff0000;" href="/clientes/delete/<%= cliente.id %>" onclick="return confirm('Deseja excluir o cliente <%= cliente.nome %>?')">Excluir</a></td>
                                 </tr>
                                 <% }) %>
                         </tbody>
